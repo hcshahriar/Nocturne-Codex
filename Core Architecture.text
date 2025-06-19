@@ -1,0 +1,44 @@
+app/
+├── channels/
+│   ├── application_cable/
+│   ├── project_channel.rb
+│   └── notification_channel.rb
+├── controllers/
+│   ├── api/
+│   │   ├── v1/
+│   │   └── graphql/
+│   ├── concerns/
+│   └── application_controller.rb
+├── jobs/
+│   ├── project_export_job.rb
+│   └── notification_delivery_job.rb
+├── mailers/
+├── models/
+│   ├── concerns/
+│   ├── ability.rb
+│   └── user.rb
+├── services/
+│   ├── project_creator.rb
+│   └── payment_processor.rb
+├── uploaders/
+│   └── file_uploader.rb
+├── views/
+│   ├── components/
+│   └── layouts/
+└── workers/
+    └── analytics_worker.rb
+
+config/
+├── initializers/
+│   ├── devise.rb
+│   ├── sidekiq.rb
+│   └── shrine.rb
+├── locales/
+└── routes/
+    ├── api.rb
+    └── admin.rb
+
+lib/
+├── core_ext/
+├── dark_forge/
+└── tasks/
